@@ -7,29 +7,16 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View, Text} from 'react-native';
+import AddToDo from './AddToDo';
+import ToDoList from './ToDoList';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <View testID="welcome">
-      <Text>Welcome to React Native!</Text>
-      <Text />
-      <Text />
+      <Text>ToDo TDD</Text>
+      <AddToDo />
+      <ToDoList />
     </View>
   );
 };
