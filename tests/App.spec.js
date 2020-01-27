@@ -6,7 +6,6 @@ import 'react-native';
 import React from 'react';
 import App from '../src/App';
 import {shallow} from 'enzyme';
-import {Text} from 'react-native';
 
 describe('App', () => {
   const wrapper = shallow(<App />);
